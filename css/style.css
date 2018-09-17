@@ -19,6 +19,7 @@ float: left;
 width: 30%;
 background: #FF1493;
 padding: 20px;
+min-height:200px;
 }
 
 nav ul {
@@ -29,9 +30,10 @@ padding:0;
 article {
 float:left;
 padding:20px;
-width:40%;
-background-color:#4682B4;
-min-height:300px;
+width:60%;
+background-color:#Black;
+min-height:200px;
+color:white;
 }
 
 footer {
