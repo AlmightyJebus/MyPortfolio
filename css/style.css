@@ -3,42 +3,61 @@ box-sixing:border-box;
 }
 body {
 font-family:Arial, Helvetica;
-background-color:#696969;
+background-color:#FFF8DC;
 }
 
 header {
-background-color: #FF1493;
-padding: 30px;
+background-color: #FFEBCD;
 text-align: center;
+padding:30px;
 font-size: 30px;
 color: white;
 }
 
 nav {
-float: left;
-width: 30%;
-background: #FF1493;
-padding: 20px;
-min-height:200px;
+    float: left;
+    width: 30%;
+    background: #DEB887;
+	padding:20px;
 }
 
 nav ul {
-list-style-type:none;
-padding:0;
+    list-style-type: none;
+    padding: 0;
 }
 
 article {
-float:left;
-padding:20px;
-width:60%;
-background-color:#Black;
-min-height:200px;
-color:white;
+    float: center;
+    width: 98%;
+    background-color: #DEB887;
+	padding:20px;
+}
+
+section:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 footer {
-background-color:yellow;
-padding:10px;
+background-color:#FFB887;
 text-align:center;
+padding: 10px;
 color:white;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
 }
