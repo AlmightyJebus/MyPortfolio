@@ -9,20 +9,36 @@
 <link rel="stylesheet" href="css/style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<script>
+ function validateForm(){
+ 	 if (document.forms["myForm"]["firstname"].value==null || document.forms["myForm"]["firstname"].value.trim()=="")
+ {
+ 	 alert("first name must be filled out");
+	 return false;
+ }
+ 	 if (document.forms["myForm"]["lastname"].value==null || document.forms["myForm"]["lastname"].value.trim()=="")
+ {
+ 	 alert("last name must be filled out");
+	 return false;
+ }
+ else return true;
+ }
+ </script>
+
 </head>
 
 <ul>
   <li><a href="index.html">Home</a></li>
   <li><a href="Drag&Drop.html">Drag&Drop</a></li>
   <li><a href="Form.html">Form</a></li>
-  <li><a href="#about">About</a></li>
+  <li><a href="Video&Audio.html">Video&Audio</a></li>
 </ul>
 
 <body>
 
 <h2>Form where you can type stuff</h2>
 
-<form>
+<form name="myForm" onsubmit="return validateForm()">
   First name:<br>
   <input type="text" name="firstname" value="">
   <br>
