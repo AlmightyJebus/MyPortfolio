@@ -21,6 +21,35 @@
 
 <body>
 
+<h2>Geolocation can be found here \[T]/</h2>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.watchPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";}
+    }
+    
+function showPosition(position) {
+    x.innerHTML="Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+<nav>
+<ul>
+<li><a href="https://www.gps-coordinates.net/" > You can check if the coordinates are correct here. </a></li>
+
+</ul>
+</nav>
+
 </body>
 
 </html>
